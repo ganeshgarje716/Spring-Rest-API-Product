@@ -66,18 +66,6 @@ public class productRestController {
 	
 	
 	
-//	@GetMapping("/product/{id}")
-//	public Product getProductById(@PathVariable Integer id) {
-//		
-//		return productService.getProductById(id);
-//	}
-//	
-//	
-//	
-//	@GetMapping("/products")
-//	public List<Product> getAllProducts() {
-//		
-//		return productService.getAllproducts();
-//	}
+
 	
 }
