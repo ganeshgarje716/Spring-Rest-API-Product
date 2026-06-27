@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.ganesh.entity.Product;
 import com.ganesh.service.ProductService;
 
+import jakarta.validation.Valid;
+
 @RestController
 @RequestMapping("/api/v1/")
 public class productRestController {
@@ -26,7 +28,7 @@ public class productRestController {
 	
 	
 	@PostMapping("/save")
-	public ResponseEntity<String> save(@RequestBody Product product) {
+	public ResponseEntity<String> save(@Valid @RequestBody Product product) {
 		
 		String save = productService.saveProduct(product);
 		System.err.println(product);
